@@ -58,7 +58,7 @@ jobs:
           pip install awsebcli --upgrade
 
       - name: Initialize EB
-        run: eb init my-node-app --platform node.js --region eu-west-3
+        run: eb init my-node-app --platform node.js --region eu-north-1
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
